@@ -19,10 +19,10 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         authentication = new Authentication(this);
-        setUpRenders();
+        setUpPage();
     }
 
-    public void setUpRenders(){
+    public void setUpPage() {
         final EditText et_Email_Address = findViewById(R.id.et_Email_Address);
         final EditText et_Password = findViewById(R.id.et_password);
         Button btn_Login = findViewById(R.id.btn_Login);
