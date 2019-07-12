@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "645583188602",
+    "firebase_url": "https://howgreen-f4709.firebaseio.com",
+    "project_id": "howgreen-f4709",
+    "storage_bucket": "howgreen-f4709.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645583188602:android:932f3821ae27a344",
+        "android_client_info": {
+          "package_name": "com.plasticbashers.howgreen2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "645583188602-deqvm1e4ukjmj0muj231advgkg11vhkg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.plasticbashers.howgreen2",
+            "certificate_hash": "38c9fbc949637fda50453c2bf0600fdb2a0160d6"
+          }
+        },
+        {
+          "client_id": "645583188602-eh7g8m6jp6e08s633u9vv6ed9od9r621.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCNaAufvRa2vuLd8H-q_x2nsLs28V7Hyc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "645583188602-eh7g8m6jp6e08s633u9vv6ed9od9r621.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

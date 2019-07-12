@@ -23,4 +23,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.686" />
+    <TextView
+      android:id="@+id/username_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="81dp"
+      android:layout_marginBottom="222dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginEnd="10dp"
+      android:text="TextView"
+      android:textSize="40sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView3"
+      app:layout_constraintVertical_bias="0.51"/>
+    <Button
+      android:id="@+id/logout_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:layout_marginBottom="249dp"
+      android:layout_marginStart="162dp"
+      android:layout_marginEnd="162dp"
+      android:text="Log Out"
+      app:layout_constraintBottom_toTopOf="@+id/textView3"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
 </android.support.constraint.ConstraintLayout>

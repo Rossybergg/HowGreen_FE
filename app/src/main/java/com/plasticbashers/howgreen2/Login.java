@@ -36,6 +36,15 @@ public class Login extends AppCompatActivity {
                 authentication.login(email, password);
             }
         });
+
+        btn_Signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email = et_Email_Address.getText().toString();
+                String password = et_Password.getText().toString();
+                authentication.signUp(email, password);
+            }
+        });
     }
 
 

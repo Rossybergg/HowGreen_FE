@@ -14,27 +14,44 @@ import com.plasticbashers.howgreen2.Home;
 
 public class Authentication extends AppCompatActivity {
 
-    private FirebaseAuth firebaseAuth;
-    private final Context context;
+  private FirebaseAuth firebaseAuth;
+  private final Context context;
 
-    public Authentication(Context context) {
-        this.context = context;
-    }
+  public Authentication(Context context) {
+    this.context = context;
+  }
 
-    public void login(String email, String password) {
-        firebaseAuth = FirebaseAuth.getInstance();
-        firebaseAuth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // sign in success
-                            context.startActivity(new Intent(context, Home.class));
-                        } else {
-                            // Sign in fails
-                            Toast.makeText(context, "Email or password is incorrect", Toast.LENGTH_LONG).show();
-                        }
-                    }
-                });
-    }
+  public void login(String email, String password) {
+    firebaseAuth = FirebaseAuth.getInstance();
+    firebaseAuth.signInWithEmailAndPassword(email, password)
+        .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+          @Override
+          public void onComplete(@NonNull Task<AuthResult> task) {
+            if (task.isSuccessful()) {
+              // sign in success
+              context.startActivity(new Intent(context, Home.class));
+            } else {
+              // Sign in fails
+              Toast.makeText(context, "Email or password is incorrect", Toast.LENGTH_LONG).show();
+            }
+          }
+        });
+  }
+
+  public void signUp(String email, String password) {
+    firebaseAuth = FirebaseAuth.getInstance();
+    firebaseAuth.createUserWithEmailAndPassword(email, password)
+        .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+          @Override
+          public void onComplete(@NonNull Task<AuthResult> task) {
+            if (task.isSuccessful()) {
+              // sign in success
+              context.startActivity(new Intent(context, Home.class));
+            } else {
+              // Sign in fails
+              Toast.makeText(context, "Sign up failed", Toast.LENGTH_LONG).show();
+            }
+          }
+        });
+  }
 }
